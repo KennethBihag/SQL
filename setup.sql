@@ -21,7 +21,7 @@ CREATE TABLE geomdata (
 --     TYPE TEXT;
 
 COPY geomdata (_faces,_guid,_body)
-    FROM './geomDataSample.tsv'
+    FROM './sample tables/geomDataSample.tsv'
     WITH (FORMAT CSV, DELIMITER E'\t');
 
 -- returns number of faces in a mesh from geometry body property
